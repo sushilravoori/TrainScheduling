@@ -40,10 +40,7 @@ class Train
 public:
   Train(Station *stations, int numStations, int numCars);
   void run(Car *cars, Operation *operations, int *numOperations);
-  StackAr<StationNode*> * ShortestPath(int startstation, int endstation);
-  StackAr<StationNode*> * ShortestPathUnweighted(int startstation, int endstation);
   short findNearestCar(Queue<int> **carLocations,  int trainLocation);
-  int findNearestCarUnweighted(Queue<int> **carLocations, int trainLocation);
 }; // class train 
 
 
